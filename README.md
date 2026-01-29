@@ -26,7 +26,7 @@ SurfaceLens was built to answer one question:
 
 ## What SurfaceLens Does
 
-For each discovered asset, ShadowStrike:
+For each discovered asset, SurfaceLens:
 
 - Categorizes the exposed service (remote access, admin panel, database, etc.)
 - Identifies high‑risk internet‑facing services
@@ -179,18 +179,6 @@ This makes the output suitable for:
 
 ---
 
-### Example: Offline Analysis & Report Generation
-
-The screenshot below shows SurfaceLens running in offline mode using a JSON dataset
-and generating a Markdown report.
-
-![SurfaceLens Offline Mode](screenshots/offline_markdown_report.png)
-
-The screenshot below shows SurfaceLens's a Markdown report generated in offline mode using a JSON dataset.
-
-![SurfaceLens Offline Mode](screenshots/markdown_report.png)
-
----
 
 ## Ethical Use & Disclaimer
 
