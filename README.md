@@ -186,7 +186,7 @@ and generating a Markdown report.
 
 ![ShadowStrike Offline Mode](screenshots/offline_markdown_report.png)
 
-The screenshot below shows ShadowStrike's a Markdown repor generated in offline mode using a JSON dataset.
+The screenshot below shows ShadowStrike's a Markdown report generated in offline mode using a JSON dataset.
 
 ![ShadowStrike Offline Mode](screenshots/markdown_report.png)
 
