@@ -1,6 +1,6 @@
-# ShadowStrike
+# SurfaceLens
 
-**ShadowStrike** is a passive attack surface and Shadow IT intelligence engine designed to help security teams understand *what is exposed*, *why it matters*, and *how risky it is*, without performing any active scanning.
+**SurfaceLens** is a passive attack surface and Shadow IT intelligence engine designed to help security teams understand *what is exposed*, *why it matters*, and *how risky it is*, without performing any active scanning.
 
 It works in **two modes**:
 - **Online mode** using live Shodan data
@@ -10,7 +10,7 @@ Once assets are loaded, ShadowStrike applies the same analysis pipeline to both 
 
 ---
 
-## Why ShadowStrike Exists
+## Why SurfaceLens Exists
 
 Modern organizations often lose visibility over:
 - Cloud assets spun up outside official processes
@@ -24,7 +24,7 @@ ShadowStrike was built to answer one question:
 
 ---
 
-## What ShadowStrike Does
+## What SurfaceLens Does
 
 For each discovered asset, ShadowStrike:
 
@@ -59,8 +59,8 @@ All analysis is **passive**. No exploitation. No scanning.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/404saint/shadowstrike.git
-cd shadowstrike
+git clone https://github.com/404saint/surfacelens.git
+cd surfacelens
 ````
 
 ---
@@ -87,10 +87,10 @@ If you don’t have a paid key, **offline mode works without Shodan**.
 
 ---
 
-### 4. Run ShadowStrike
+### 4. Run SurfaceLens
 
 ```bash
-python shadowstrike.py
+python surfacelens.py
 ```
 
 You will be guided interactively.
@@ -112,7 +112,7 @@ You may provide:
 * Organization name (e.g. `Google`)
 * ASN (e.g. `AS15169`)
 
-ShadowStrike will pull live Shodan data and analyze it.
+SurfaceLens will pull live Shodan data and analyze it.
 
 > Requires a paid Shodan API plan.
 
@@ -134,7 +134,7 @@ This allows you to:
 * Work in restricted environments
 * Test safely without API limits
 
-ShadowStrike treats offline data exactly like live data.
+SurfaceLens treats offline data exactly like live data.
 
 ---
 
@@ -153,9 +153,9 @@ The report will be saved in the current directory with a UTC timestamp.
 Examples:
 
 ```
-shadowstrike_results_20260129_124057.json
-shadowstrike_results_20260129_124057.md
-shadowstrike_results_20260129_124057.html
+surfacelens_results_20260129_124057.json
+surfacelens_results_20260129_124057.md
+surfacelens_results_20260129_124057.html
 ```
 
 ---
@@ -181,20 +181,20 @@ This makes the output suitable for:
 
 ### Example: Offline Analysis & Report Generation
 
-The screenshot below shows ShadowStrike running in offline mode using a JSON dataset
+The screenshot below shows SurfaceLens running in offline mode using a JSON dataset
 and generating a Markdown report.
 
-![ShadowStrike Offline Mode](screenshots/offline_markdown_report.png)
+![SurfaceLens Offline Mode](screenshots/offline_markdown_report.png)
 
-The screenshot below shows ShadowStrike's a Markdown report generated in offline mode using a JSON dataset.
+The screenshot below shows SurfaceLens's a Markdown report generated in offline mode using a JSON dataset.
 
-![ShadowStrike Offline Mode](screenshots/markdown_report.png)
+![SurfaceLens Offline Mode](screenshots/markdown_report.png)
 
 ---
 
 ## Ethical Use & Disclaimer
 
-ShadowStrike is a **defensive, passive analysis tool**.
+SurfaceLens is a **defensive, passive analysis tool**.
 
 * No active scanning
 * No exploitation
