@@ -1,6 +1,6 @@
 # ShadowStrike
 
-**ShadowStrike** is a passive attack surface and Shadow IT intelligence engine designed to help security teams understand *what is exposed*, *why it matters*, and *how risky it is* — without performing any active scanning.
+**ShadowStrike** is a passive attack surface and Shadow IT intelligence engine designed to help security teams understand *what is exposed*, *why it matters*, and *how risky it is*, without performing any active scanning.
 
 It works in **two modes**:
 - **Online mode** using live Shodan data
@@ -59,7 +59,7 @@ All analysis is **passive**. No exploitation. No scanning.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/shadowstrike.git
+git clone https://github.com/404saint/shadowstrike.git
 cd shadowstrike
 ````
 
@@ -194,5 +194,3 @@ Use only on infrastructure you own or are authorized to analyze.
 ## License
 
 MIT License
-
-```
