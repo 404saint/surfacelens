@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="442pt" height="895pt" viewBox="0.00 0.00 442.46 895.20">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 891.2)">
+<title>SurfaceLens</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-891.2 438.4612,-891.2 438.4612,4 -4,4"/>
+<!-- Start -->
+<g id="node1" class="node">
+<title>Start</title>
+<path fill="none" stroke="#000000" d="M246.5006,-887.2C246.5006,-887.2 89.0418,-887.2 89.0418,-887.2 83.0418,-887.2 77.0418,-881.2 77.0418,-875.2 77.0418,-875.2 77.0418,-863.2 77.0418,-863.2 77.0418,-857.2 83.0418,-851.2 89.0418,-851.2 89.0418,-851.2 246.5006,-851.2 246.5006,-851.2 252.5006,-851.2 258.5006,-857.2 258.5006,-863.2 258.5006,-863.2 258.5006,-875.2 258.5006,-875.2 258.5006,-881.2 252.5006,-887.2 246.5006,-887.2"/>
+<text text-anchor="middle" x="167.7712" y="-865" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Start: Launch SurfaceLens</text>
+</g>
+<!-- ModeSelect -->
+<g id="node2" class="node">
+<title>ModeSelect</title>
+<path fill="none" stroke="#000000" d="M235.9727,-814.4014C235.9727,-814.4014 99.5697,-814.4014 99.5697,-814.4014 93.5697,-814.4014 87.5697,-808.4014 87.5697,-802.4014 87.5697,-802.4014 87.5697,-767.5986 87.5697,-767.5986 87.5697,-761.5986 93.5697,-755.5986 99.5697,-755.5986 99.5697,-755.5986 235.9727,-755.5986 235.9727,-755.5986 241.9727,-755.5986 247.9727,-761.5986 247.9727,-767.5986 247.9727,-767.5986 247.9727,-802.4014 247.9727,-802.4014 247.9727,-808.4014 241.9727,-814.4014 235.9727,-814.4014"/>
+<text text-anchor="middle" x="167.7712" y="-797.6" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Select Mode:</text>
+<text text-anchor="middle" x="167.7712" y="-780.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">1) Online (Shodan API)</text>
+<text text-anchor="middle" x="167.7712" y="-764" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">2) Offline (JSON)</text>
+</g>
+<!-- Start&#45;&gt;ModeSelect -->
+<g id="edge1" class="edge">
+<title>Start-&gt;ModeSelect</title>
+<path fill="none" stroke="#000000" d="M167.7712,-850.9299C167.7712,-843.1987 167.7712,-833.8689 167.7712,-824.6922"/>
+<polygon fill="#000000" stroke="#000000" points="171.2713,-824.4897 167.7712,-814.4897 164.2713,-824.4898 171.2713,-824.4897"/>
+</g>
+<!-- Online -->
+<g id="node3" class="node">
+<title>Online</title>
+<path fill="none" stroke="#000000" d="M422.6516,-702.8019C422.6516,-702.8019 266.8908,-702.8019 266.8908,-702.8019 260.8908,-702.8019 254.8908,-696.8019 254.8908,-690.8019 254.8908,-690.8019 254.8908,-673.5981 254.8908,-673.5981 254.8908,-667.5981 260.8908,-661.5981 266.8908,-661.5981 266.8908,-661.5981 422.6516,-661.5981 422.6516,-661.5981 428.6516,-661.5981 434.6516,-667.5981 434.6516,-673.5981 434.6516,-673.5981 434.6516,-690.8019 434.6516,-690.8019 434.6516,-696.8019 428.6516,-702.8019 422.6516,-702.8019"/>
+<text text-anchor="middle" x="344.7712" y="-686.4" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Online Mode:</text>
+<text text-anchor="middle" x="344.7712" y="-669.6" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Fetch assets from Shodan</text>
+</g>
+<!-- ModeSelect&#45;&gt;Online -->
+<g id="edge2" class="edge">
+<title>ModeSelect-&gt;Online</title>
+<path fill="none" stroke="#000000" d="M218.4923,-755.5416C244.3311,-740.5347 275.4591,-722.4559 300.3443,-708.0027"/>
+<polygon fill="#000000" stroke="#000000" points="302.3192,-710.9033 309.2087,-702.8544 298.8036,-704.8501 302.3192,-710.9033"/>
+<text text-anchor="middle" x="296.8224" y="-725.2" font-family="Times,serif" font-size="14.00" fill="#000000">Online</text>
+</g>
+<!-- Offline -->
+<g id="node4" class="node">
+<title>Offline</title>
+<path fill="none" stroke="#000000" d="M224.9283,-702.8019C224.9283,-702.8019 110.6141,-702.8019 110.6141,-702.8019 104.6141,-702.8019 98.6141,-696.8019 98.6141,-690.8019 98.6141,-690.8019 98.6141,-673.5981 98.6141,-673.5981 98.6141,-667.5981 104.6141,-661.5981 110.6141,-661.5981 110.6141,-661.5981 224.9283,-661.5981 224.9283,-661.5981 230.9283,-661.5981 236.9283,-667.5981 236.9283,-673.5981 236.9283,-673.5981 236.9283,-690.8019 236.9283,-690.8019 236.9283,-696.8019 230.9283,-702.8019 224.9283,-702.8019"/>
+<text text-anchor="middle" x="167.7712" y="-686.4" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Offline Mode:</text>
+<text text-anchor="middle" x="167.7712" y="-669.6" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Load JSON dataset</text>
+</g>
+<!-- ModeSelect&#45;&gt;Offline -->
+<g id="edge3" class="edge">
+<title>ModeSelect-&gt;Offline</title>
+<path fill="none" stroke="#000000" d="M167.7712,-755.5416C167.7712,-742.2461 167.7712,-726.5392 167.7712,-713.0788"/>
+<polygon fill="#000000" stroke="#000000" points="171.2713,-712.8543 167.7712,-702.8544 164.2713,-712.8544 171.2713,-712.8543"/>
+<text text-anchor="middle" x="187.983" y="-725.2" font-family="Times,serif" font-size="14.00" fill="#000000">Offline</text>
+</g>
+<!-- LoadFail -->
+<g id="node5" class="node">
+<title>LoadFail</title>
+<path fill="#f8d7da" stroke="#000000" d="M190.049,-608.6C190.049,-608.6 37.4934,-608.6 37.4934,-608.6 31.4934,-608.6 25.4934,-602.6 25.4934,-596.6 25.4934,-596.6 25.4934,-584.6 25.4934,-584.6 25.4934,-578.6 31.4934,-572.6 37.4934,-572.6 37.4934,-572.6 190.049,-572.6 190.049,-572.6 196.049,-572.6 202.049,-578.6 202.049,-584.6 202.049,-584.6 202.049,-596.6 202.049,-596.6 202.049,-602.6 196.049,-608.6 190.049,-608.6"/>
+<text text-anchor="middle" x="113.7712" y="-586.4" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Load Failed / Invalid Input</text>
+</g>
+<!-- ModeSelect&#45;&gt;LoadFail -->
+<g id="edge4" class="edge">
+<title>ModeSelect-&gt;LoadFail</title>
+<path fill="none" stroke="#000000" d="M87.2441,-763.7515C56.6047,-751.318 24.8023,-732.1285 6.9584,-703 -2.6996,-687.2342 -1.7873,-677.6896 6.9584,-661.4 18.1882,-640.4836 38.6148,-624.7031 58.6199,-613.411"/>
+<polygon fill="#000000" stroke="#000000" points="60.2761,-616.4944 67.4422,-608.6907 56.9737,-610.3223 60.2761,-616.4944"/>
+<text text-anchor="middle" x="49.1776" y="-678" font-family="Times,serif" font-size="14.00" fill="#000000">Invalid Choice</text>
+</g>
+<!-- Online&#45;&gt;LoadFail -->
+<g id="edge6" class="edge">
+<title>Online-&gt;LoadFail</title>
+<path fill="none" stroke="#000000" d="M310.9297,-661.4302C301.8261,-655.7001 292.0338,-649.4052 283.1176,-643.4 272.5148,-636.2588 271.3762,-631.961 259.7712,-626.6 244.8552,-619.7094 228.4488,-614.031 212.1865,-609.3852"/>
+<polygon fill="#000000" stroke="#000000" points="212.6632,-605.8871 202.0941,-606.6244 210.8162,-612.639 212.6632,-605.8871"/>
+<text text-anchor="middle" x="303.598" y="-630.8" font-family="Times,serif" font-size="14.00" fill="#000000">Failure</text>
+</g>
+<!-- Deduplicate -->
+<g id="node6" class="node">
+<title>Deduplicate</title>
+<path fill="none" stroke="#000000" d="M371.5778,-608.6C371.5778,-608.6 259.9647,-608.6 259.9647,-608.6 253.9647,-608.6 247.9647,-602.6 247.9647,-596.6 247.9647,-596.6 247.9647,-584.6 247.9647,-584.6 247.9647,-578.6 253.9647,-572.6 259.9647,-572.6 259.9647,-572.6 371.5778,-572.6 371.5778,-572.6 377.5778,-572.6 383.5778,-578.6 383.5778,-584.6 383.5778,-584.6 383.5778,-596.6 383.5778,-596.6 383.5778,-602.6 377.5778,-608.6 371.5778,-608.6"/>
+<text text-anchor="middle" x="315.7712" y="-586.4" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Deduplicate Assets</text>
+</g>
+<!-- Online&#45;&gt;Deduplicate -->
+<g id="edge5" class="edge">
+<title>Online-&gt;Deduplicate</title>
+<path fill="none" stroke="#000000" d="M338.1907,-661.4145C334.1956,-648.7957 329.0436,-632.5223 324.6859,-618.7582"/>
+<polygon fill="#000000" stroke="#000000" points="327.8959,-617.3011 321.5408,-608.8239 321.2224,-619.4139 327.8959,-617.3011"/>
+<text text-anchor="middle" x="372.7849" y="-630.8" font-family="Times,serif" font-size="14.00" fill="#000000">Assets Loaded</text>
+</g>
+<!-- Offline&#45;&gt;LoadFail -->
+<g id="edge8" class="edge">
+<title>Offline-&gt;LoadFail</title>
+<path fill="none" stroke="#000000" d="M130.3295,-661.4577C124.2347,-656.3684 118.7399,-650.3474 115.1176,-643.4 111.2426,-635.9679 109.9631,-627.1118 109.9197,-618.796"/>
+<polygon fill="#000000" stroke="#000000" points="113.4207,-618.8616 110.4234,-608.6996 106.4294,-618.5127 113.4207,-618.8616"/>
+<text text-anchor="middle" x="135.598" y="-630.8" font-family="Times,serif" font-size="14.00" fill="#000000">Failure</text>
+</g>
+<!-- Offline&#45;&gt;Deduplicate -->
+<g id="edge7" class="edge">
+<title>Offline-&gt;Deduplicate</title>
+<path fill="none" stroke="#000000" d="M166.3558,-661.5819C166.6872,-649.9315 169.1524,-635.886 177.7438,-626.6 186.5799,-617.0497 211.4161,-609.2743 237.6293,-603.4257"/>
+<polygon fill="#000000" stroke="#000000" points="238.6608,-606.7847 247.7127,-601.2789 237.203,-599.9381 238.6608,-606.7847"/>
+<text text-anchor="middle" x="218.7849" y="-630.8" font-family="Times,serif" font-size="14.00" fill="#000000">Assets Loaded</text>
+</g>
+<!-- Categorize -->
+<g id="node7" class="node">
+<title>Categorize</title>
+<path fill="none" stroke="#000000" d="M415.4782,-535.4019C415.4782,-535.4019 216.0642,-535.4019 216.0642,-535.4019 210.0642,-535.4019 204.0642,-529.4019 204.0642,-523.4019 204.0642,-523.4019 204.0642,-506.1981 204.0642,-506.1981 204.0642,-500.1981 210.0642,-494.1981 216.0642,-494.1981 216.0642,-494.1981 415.4782,-494.1981 415.4782,-494.1981 421.4782,-494.1981 427.4782,-500.1981 427.4782,-506.1981 427.4782,-506.1981 427.4782,-523.4019 427.4782,-523.4019 427.4782,-529.4019 421.4782,-535.4019 415.4782,-535.4019"/>
+<text text-anchor="middle" x="315.7712" y="-519" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Categorize Services</text>
+<text text-anchor="middle" x="315.7712" y="-502.2" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">(remote_access/admin_panel/... )</text>
+</g>
+<!-- Deduplicate&#45;&gt;Categorize -->
+<g id="edge9" class="edge">
+<title>Deduplicate-&gt;Categorize</title>
+<path fill="none" stroke="#000000" d="M315.7712,-572.2509C315.7712,-564.315 315.7712,-554.8041 315.7712,-545.8258"/>
+<polygon fill="#000000" stroke="#000000" points="319.2713,-545.6568 315.7712,-535.6568 312.2713,-545.6569 319.2713,-545.6568"/>
+</g>
+<!-- Exposure -->
+<g id="node8" class="node">
+<title>Exposure</title>
+<path fill="none" stroke="#000000" d="M376.935,-456.8019C376.935,-456.8019 254.6074,-456.8019 254.6074,-456.8019 248.6074,-456.8019 242.6074,-450.8019 242.6074,-444.8019 242.6074,-444.8019 242.6074,-427.5981 242.6074,-427.5981 242.6074,-421.5981 248.6074,-415.5981 254.6074,-415.5981 254.6074,-415.5981 376.935,-415.5981 376.935,-415.5981 382.935,-415.5981 388.935,-421.5981 388.935,-427.5981 388.935,-427.5981 388.935,-444.8019 388.935,-444.8019 388.935,-450.8019 382.935,-456.8019 376.935,-456.8019"/>
+<text text-anchor="middle" x="315.7712" y="-440.4" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Analyze Exposure</text>
+<text text-anchor="middle" x="315.7712" y="-423.6" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">(high-risk ports, TLS)</text>
+</g>
+<!-- Categorize&#45;&gt;Exposure -->
+<g id="edge10" class="edge">
+<title>Categorize-&gt;Exposure</title>
+<path fill="none" stroke="#000000" d="M315.7712,-494.1488C315.7712,-485.9105 315.7712,-476.2489 315.7712,-467.202"/>
+<polygon fill="#000000" stroke="#000000" points="319.2713,-466.9862 315.7712,-456.9862 312.2713,-466.9862 319.2713,-466.9862"/>
+</g>
+<!-- ShadowIT -->
+<g id="node9" class="node">
+<title>ShadowIT</title>
+<path fill="none" stroke="#000000" d="M406.5651,-378.2019C406.5651,-378.2019 224.9773,-378.2019 224.9773,-378.2019 218.9773,-378.2019 212.9773,-372.2019 212.9773,-366.2019 212.9773,-366.2019 212.9773,-348.9981 212.9773,-348.9981 212.9773,-342.9981 218.9773,-336.9981 224.9773,-336.9981 224.9773,-336.9981 406.5651,-336.9981 406.5651,-336.9981 412.5651,-336.9981 418.5651,-342.9981 418.5651,-348.9981 418.5651,-348.9981 418.5651,-366.2019 418.5651,-366.2019 418.5651,-372.2019 412.5651,-378.2019 406.5651,-378.2019"/>
+<text text-anchor="middle" x="315.7712" y="-361.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Analyze Shadow IT</text>
+<text text-anchor="middle" x="315.7712" y="-345" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">(hostname &amp; cert mismatches)</text>
+</g>
+<!-- Exposure&#45;&gt;ShadowIT -->
+<g id="edge11" class="edge">
+<title>Exposure-&gt;ShadowIT</title>
+<path fill="none" stroke="#000000" d="M315.7712,-415.5488C315.7712,-407.3105 315.7712,-397.6489 315.7712,-388.602"/>
+<polygon fill="#000000" stroke="#000000" points="319.2713,-388.3862 315.7712,-378.3862 312.2713,-388.3862 319.2713,-388.3862"/>
+</g>
+<!-- RiskScore -->
+<g id="node10" class="node">
+<title>RiskScore</title>
+<path fill="none" stroke="#000000" d="M420.5861,-299.8C420.5861,-299.8 210.9564,-299.8 210.9564,-299.8 204.9564,-299.8 198.9564,-293.8 198.9564,-287.8 198.9564,-287.8 198.9564,-275.8 198.9564,-275.8 198.9564,-269.8 204.9564,-263.8 210.9564,-263.8 210.9564,-263.8 420.5861,-263.8 420.5861,-263.8 426.5861,-263.8 432.5861,-269.8 432.5861,-275.8 432.5861,-275.8 432.5861,-287.8 432.5861,-287.8 432.5861,-293.8 426.5861,-299.8 420.5861,-299.8"/>
+<text text-anchor="middle" x="315.7712" y="-277.6" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Calculate Risk Score &amp; Confidence</text>
+</g>
+<!-- ShadowIT&#45;&gt;RiskScore -->
+<g id="edge12" class="edge">
+<title>ShadowIT-&gt;RiskScore</title>
+<path fill="none" stroke="#000000" d="M315.7712,-336.8873C315.7712,-328.5698 315.7712,-318.8512 315.7712,-309.9124"/>
+<polygon fill="#000000" stroke="#000000" points="319.2713,-309.9078 315.7712,-299.9078 312.2713,-309.9079 319.2713,-309.9078"/>
+</g>
+<!-- ReportSelect -->
+<g id="node11" class="node">
+<title>ReportSelect</title>
+<path fill="none" stroke="#000000" d="M380.1773,-226.9003C380.1773,-226.9003 251.3652,-226.9003 251.3652,-226.9003 245.3652,-226.9003 239.3652,-220.9003 239.3652,-214.9003 239.3652,-214.9003 239.3652,-163.4997 239.3652,-163.4997 239.3652,-157.4997 245.3652,-151.4997 251.3652,-151.4997 251.3652,-151.4997 380.1773,-151.4997 380.1773,-151.4997 386.1773,-151.4997 392.1773,-157.4997 392.1773,-163.4997 392.1773,-163.4997 392.1773,-214.9003 392.1773,-214.9003 392.1773,-220.9003 386.1773,-226.9003 380.1773,-226.9003"/>
+<text text-anchor="middle" x="315.7712" y="-210.2" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Select Report Format:</text>
+<text text-anchor="middle" x="315.7712" y="-193.4" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">1) JSON</text>
+<text text-anchor="middle" x="315.7712" y="-176.6" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">2) Markdown</text>
+<text text-anchor="middle" x="315.7712" y="-159.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">3) HTML</text>
+</g>
+<!-- RiskScore&#45;&gt;ReportSelect -->
+<g id="edge13" class="edge">
+<title>RiskScore-&gt;ReportSelect</title>
+<path fill="none" stroke="#000000" d="M315.7712,-263.5052C315.7712,-255.8412 315.7712,-246.5372 315.7712,-237.143"/>
+<polygon fill="#000000" stroke="#000000" points="319.2713,-236.9871 315.7712,-226.9871 312.2713,-236.9871 319.2713,-236.9871"/>
+</g>
+<!-- GenerateReport -->
+<g id="node12" class="node">
+<title>GenerateReport</title>
+<path fill="none" stroke="#000000" d="M364.0225,-114.4019C364.0225,-114.4019 267.52,-114.4019 267.52,-114.4019 261.52,-114.4019 255.52,-108.4019 255.52,-102.4019 255.52,-102.4019 255.52,-85.1981 255.52,-85.1981 255.52,-79.1981 261.52,-73.1981 267.52,-73.1981 267.52,-73.1981 364.0225,-73.1981 364.0225,-73.1981 370.0225,-73.1981 376.0225,-79.1981 376.0225,-85.1981 376.0225,-85.1981 376.0225,-102.4019 376.0225,-102.4019 376.0225,-108.4019 370.0225,-114.4019 364.0225,-114.4019"/>
+<text text-anchor="middle" x="315.7712" y="-98" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Generate Report</text>
+<text text-anchor="middle" x="315.7712" y="-81.2" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">Save to file</text>
+</g>
+<!-- ReportSelect&#45;&gt;GenerateReport -->
+<g id="edge14" class="edge">
+<title>ReportSelect-&gt;GenerateReport</title>
+<path fill="none" stroke="#000000" d="M315.7712,-151.4954C315.7712,-142.6333 315.7712,-133.2893 315.7712,-124.7625"/>
+<polygon fill="#000000" stroke="#000000" points="319.2713,-124.4967 315.7712,-114.4967 312.2713,-124.4967 319.2713,-124.4967"/>
+</g>
+<!-- End -->
+<g id="node13" class="node">
+<title>End</title>
+<path fill="none" stroke="#000000" d="M383.1503,-36C383.1503,-36 248.3922,-36 248.3922,-36 242.3922,-36 236.3922,-30 236.3922,-24 236.3922,-24 236.3922,-12 236.3922,-12 236.3922,-6 242.3922,0 248.3922,0 248.3922,0 383.1503,0 383.1503,0 389.1503,0 395.1503,-6 395.1503,-12 395.1503,-12 395.1503,-24 395.1503,-24 395.1503,-30 389.1503,-36 383.1503,-36"/>
+<text text-anchor="middle" x="315.7712" y="-13.8" font-family="Helvetica,sans-Serif" font-size="14.00" fill="#000000">End / Output Complete</text>
+</g>
+<!-- GenerateReport&#45;&gt;End -->
+<g id="edge15" class="edge">
+<title>GenerateReport-&gt;End</title>
+<path fill="none" stroke="#000000" d="M315.7712,-73.0873C315.7712,-64.7698 315.7712,-55.0512 315.7712,-46.1124"/>
+<polygon fill="#000000" stroke="#000000" points="319.2713,-46.1078 315.7712,-36.1078 312.2713,-46.1079 319.2713,-46.1078"/>
+</g>
+</g>
+</svg>
