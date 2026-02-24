@@ -1,194 +1,141 @@
 # SurfaceLens
 
-**SurfaceLens** is a passive attack surface and Shadow IT intelligence engine designed to help security teams understand *what is exposed*, *why it matters*, and *how risky it is*, without performing any active scanning.
+![Python](https://img.shields.io/badge/language-python-3776AB?logo=python\&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-active%20development-blue)
+![Security Research](https://img.shields.io/badge/use--case-passive%20recon-critical)
+![Shadow IT](https://img.shields.io/badge/feature-shadow%20IT-orange)
 
-It works in **two modes**:
-- **Online mode** using live Shodan data
-- **Offline mode** using user‑supplied JSON datasets
+**SurfaceLens** is a **passive attack surface and Shadow IT intelligence engine**, designed to help security teams understand **what is exposed**, **why it matters**, and **how risky it is**, without performing active scanning.
 
-Once assets are loaded, SurfaceLens applies the same analysis pipeline to both modes, producing **explainable risk scores**, **Shadow IT indicators**, and **professional reports** (JSON, Markdown, HTML).
+It supports **two execution modes**:
 
----
+* **Online** — live Shodan API
+* **Offline** — user-supplied JSON datasets
 
-## Why SurfaceLens Exists
-
-Modern organizations often lose visibility over:
-- Cloud assets spun up outside official processes
-- Internet‑exposed admin panels and databases
-- High‑risk services accidentally left public
-- Shadow IT infrastructure hiding in plain sight
-
-SurfaceLens was built to answer one question:
-
-> **“If I were an attacker, what would I see — and which assets would matter most?”**
+Both modes feed the same **analysis pipeline**, producing **explainable risk scores**, **Shadow IT indicators**, and **professional reports**.
 
 ---
 
-## What SurfaceLens Does
+## Architecture Overview
 
-For each discovered asset, SurfaceLens:
-
-- Categorizes the exposed service (remote access, admin panel, database, etc.)
-- Identifies high‑risk internet‑facing services
-- Detects lack of transport security (TLS)
-- Flags potential Shadow IT using hostname and certificate mismatches
-- Assigns a **risk score (0–10)** with confidence
-- Explains *why* each asset is risky
-- Generates clean, shareable reports
-
-All analysis is **passive**. No exploitation. No scanning.
+<p align="center">
+  <img src="example/surfacelens-architecture.svg" alt="SurfaceLens execution flow diagram" width="300">
+</p>
 
 ---
 
-## Features
+## Architecture Explanation
 
-- Online mode (Live Shodan API)
-- Offline mode (Any JSON dataset with asset data)
-- Shadow IT detection with confidence scoring
-- Explainable risk scoring
-- Asset deduplication with first/last seen timestamps
-- Report generation:
-  - JSON (machine‑readable)
-  - Markdown (documentation / audits)
-  - HTML (executive‑friendly)
+SurfaceLens follows a **source-agnostic, passive analysis pipeline**:
+
+### 1. Mode Selection
+
+Users choose between:
+
+* **Online Mode** — fetch assets via Shodan API
+* **Offline Mode** — load JSON datasets
+
+Invalid selections or load failures exit gracefully.
+
+
+### 2. Asset Deduplication
+
+Duplicates are removed based on **IP and port**, recording **first/last seen timestamps** for timeline insights.
+
+
+### 3. Asset Analysis Pipeline
+
+Each asset undergoes:
+
+1. **Service Categorization** — e.g., remote access, admin panel, database
+2. **Exposure Analysis** — high-risk ports, missing TLS
+3. **Shadow IT Detection** — hostname and certificate mismatches
+4. **Risk Scoring** — numeric score (0–10) with confidence based on service type, exposure, and Shadow IT signals
+
+This ensures **consistent, explainable evaluation**.
+
+
+### 4. Report Generation
+
+After analysis, reports can be generated in:
+
+* **JSON** — structured, machine-readable
+* **Markdown** — human-readable for audits
+* **HTML** — executive-friendly, formatted
+
+Reports are timestamped and saved to the current directory.
 
 ---
 
-## Installation & Usage
+## Capabilities
 
-### 1. Clone the repository
+* Online mode (live Shodan API)
+* Offline mode (JSON datasets)
+* Passive asset discovery (no active scanning)
+* Shadow IT detection with confidence scoring
+* Explainable risk scoring for each asset
+* Deduplication with first/last seen tracking
+* Multi-format report generation (JSON, Markdown, HTML)
+
+---
+
+## Installation
 
 ```bash
 git clone https://github.com/404saint/surfacelens.git
 cd surfacelens
-````
-
----
-
-### 2. Install requirements
-
-```bash
 pip install shodan
 ```
 
-> Python 3.9+ recommended
+> Python 3.9+ recommended.
 
----
+### Optional — Online Mode
 
-### 3. (Optional) Set Shodan API key — Online Mode only
-
-If you want to use **online mode**, export your paid Shodan API key:
+Set your **Shodan API key** for online analysis:
 
 ```bash
 export SHODAN_API_KEY="YOUR_API_KEY"
 ```
 
-If you don’t have a paid key, **offline mode works without Shodan**.
+Offline mode works without Shodan.
 
 ---
 
-### 4. Run SurfaceLens
+## Usage
 
 ```bash
 python surfacelens.py
 ```
 
-You will be guided interactively.
+Follow the interactive prompts:
 
----
-
-## Execution Modes
-
-### Online Mode (Live Shodan)
-
-Select:
-
-```
-1) Online (Live Shodan API)
-```
-
-You may provide:
-
-* Organization name (e.g. `Google`)
-* ASN (e.g. `AS15169`)
-
-SurfaceLens will pull live Shodan data and analyze it.
-
-> Requires a paid Shodan API plan.
-
----
-
-### Offline Mode (JSON Dataset)
-
-Select:
-
-```
-2) Offline (Load JSON dataset)
-```
-
-Provide the path to a JSON file containing asset data.
-
-This allows you to:
-
-* Analyze previously collected data
-* Work in restricted environments
-* Test safely without API limits
-
-SurfaceLens treats offline data exactly like live data.
-
----
-
-## Report Generation
-
-After analysis completes, choose a report format:
-
-```
-1) JSON
-2) Markdown
-3) HTML
-```
-
-The report will be saved in the current directory with a UTC timestamp.
-
-Examples:
-
-```
-surfacelens_results_20260129_124057.json
-surfacelens_results_20260129_124057.md
-surfacelens_results_20260129_124057.html
-```
+1. **Select mode** — Online or Offline
+2. **Provide organization or ASN** (for Online) or **JSON file path** (for Offline)
+3. **Analyze assets** — deduplication, exposure, Shadow IT, risk scoring
+4. **Generate report** — choose JSON, Markdown, or HTML
 
 ---
 
 ## Example Output (Per Asset)
 
-Each asset includes:
-
 * Service category
 * Exposure findings
-* Shadow IT detection (with confidence)
-* Risk score (0–10)
-* Risk reasoning
-* Risk confidence
+* Shadow IT indicators (with confidence)
+* Risk score (0–10) and confidence
+* Explanation of risk factors
 
-This makes the output suitable for:
-
-* Technical teams
-* Security leadership
-* Documentation and audits
+Reports are suitable for **technical teams**, **leadership**, and **audit documentation**.
 
 ---
 
+## Ethical Use & Non-Goals
 
-## Ethical Use & Disclaimer
-
-SurfaceLens is a **defensive, passive analysis tool**.
+SurfaceLens is strictly **passive and defensive**:
 
 * No active scanning
-* No exploitation
-* No brute‑forcing
-
-Use only on infrastructure you own or are authorized to analyze.
+* No exploitation or brute forcing
+* Only analyze assets you own or are authorized to assess
 
 ---
 
